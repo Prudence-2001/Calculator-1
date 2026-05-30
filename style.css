@@ -1,0 +1,167 @@
+body {
+    background: #414141;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Heading */
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Theme Button */
+.theme-toggle {
+    margin-bottom: 20px;
+}
+
+/* Calculator */
+.calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Display */
+.display {
+    width: 92%;
+    height: 60px;
+    text-align: right;
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* General Buttons */
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    background: #d4d4d4;
+    transform: scale(1.03);
+}
+
+/* Operator Buttons */
+.operator {
+    background-color: #f9a825;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #f57f17;
+}
+
+/* Equal Button */
+.equal {
+    background-color: #00c853;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #00b342;
+}
+
+/* Clear Button */
+.clear {
+    background-color: #e53935;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #d32f2f;
+}
+
+/* History */
+.history {
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history h3 {
+    margin-top: 0;
+}
+
+.history ul {
+    padding-left: 20px;
+}
+
+.history li {
+    margin-bottom: 5px;
+}
+
+/* Dark Theme */
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark h1 {
+    color: white;
+}
+
+body.dark .calculator {
+    background: #1e1e1e;
+}
+
+body.dark .display {
+    background: #2c2c2c;
+    color: white;
+    border-color: #555;
+}
+
+body.dark button {
+    background: #333;
+    color: white;
+}
+
+body.dark button:hover {
+    background: #444;
+}
+
+body.dark .operator {
+    background-color: #f57c00;
+}
+
+body.dark .equal {
+    background-color: #00e676;
+}
+
+body.dark .clear {
+    background-color: #ef5350;
+}
+
+body.dark .history {
+    background: #1e1e1e;
+    color: white;
+}
